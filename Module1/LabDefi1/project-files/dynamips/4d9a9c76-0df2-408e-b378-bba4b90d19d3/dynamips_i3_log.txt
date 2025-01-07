@@ -1,0 +1,60 @@
+Jan 07 21:13:11.238 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 07 21:13:11.238 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56383.
+Jan 07 21:13:11.245 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 21:13:11.245 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nader/GNS3/projects/Lab1.2/project-files/dynamips 
+Jan 07 21:13:11.245 GENERAL: working_dir=/home/nader/GNS3/projects/Lab1.2/project-files/dynamips
+Jan 07 21:13:11.246 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nader/GNS3/projects/Lab1.2/project-files/dynamips/7eaf7cf3-63fe-4974-8ba0-7f001a7e02a8 
+Jan 07 21:13:11.246 GENERAL: working_dir=/home/nader/GNS3/projects/Lab1.2/project-files/dynamips/7eaf7cf3-63fe-4974-8ba0-7f001a7e02a8
+Jan 07 21:13:11.246 HYPERVISOR: exec_cmd: vm create BostonPizza 3 c3745 
+Jan 07 21:13:11.246 VM: VM BostonPizza created.
+Jan 07 21:13:11.246 HYPERVISOR: exec_cmd: vm set_con_tcp_port BostonPizza 5002 
+Jan 07 21:13:11.246 HYPERVISOR: exec_cmd: c3745 get_mac_addr BostonPizza 
+Jan 07 21:13:11.247 HYPERVISOR: exec_cmd: vm set_disk0 BostonPizza 0 
+Jan 07 21:13:11.247 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.247 HYPERVISOR: exec_cmd: vm set_idle_pc BostonPizza 0x60aa1da0 
+Jan 07 21:13:11.248 HYPERVISOR: exec_cmd: vm set_ios BostonPizza /home/nader/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 07 21:13:11.248 HYPERVISOR: exec_cmd: c3745 set_mac_addr BostonPizza c403.ad34.0000 
+Jan 07 21:13:11.249 HYPERVISOR: exec_cmd: vm set_nvram BostonPizza 256 
+Jan 07 21:13:11.249 HYPERVISOR: exec_cmd: vm set_ram BostonPizza 256 
+Jan 07 21:13:11.249 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.249 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 1 0 NM-1FE-TX 
+Jan 07 21:13:11.250 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.250 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 2 0 NM-1FE-TX 
+Jan 07 21:13:11.250 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.251 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 3 0 NM-1FE-TX 
+Jan 07 21:13:11.251 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.251 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 4 0 NM-1FE-TX 
+Jan 07 21:13:11.251 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.252 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 0 16 WIC-1T 
+Jan 07 21:13:11.252 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.252 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 0 32 WIC-1T 
+Jan 07 21:13:11.252 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:11.253 HYPERVISOR: exec_cmd: vm slot_add_binding BostonPizza 0 48 WIC-1T 
+Jan 07 21:13:11.620 HYPERVISOR: exec_cmd: nio create_udp udp-a1ebee4c-fd92-47b9-a01c-02debf45ccd6 10004 127.0.0.1 10005 
+Jan 07 21:13:11.832 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BostonPizza 0 0 udp-a1ebee4c-fd92-47b9-a01c-02debf45ccd6 
+Jan 07 21:13:11.833 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:12.507 HYPERVISOR: exec_cmd: nio create_udp udp-2128e673-cdde-47e3-a8da-37f78d9caf45 10020 127.0.0.1 10021 
+Jan 07 21:13:12.509 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BostonPizza 2 0 udp-2128e673-cdde-47e3-a8da-37f78d9caf45 
+Jan 07 21:13:12.510 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:25.456 HYPERVISOR: exec_cmd: vm set_ghost_status BostonPizza 2 
+Jan 07 21:13:25.457 HYPERVISOR: exec_cmd: vm set_ghost_file BostonPizza /home/nader/GNS3/projects/Lab1.2/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Jan 07 21:13:25.457 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:13:25.459 HYPERVISOR: exec_cmd: vm set_config BostonPizza configs/i3_startup-config.cfg 
+Jan 07 21:13:25.459 HYPERVISOR: exec_cmd: vm start BostonPizza 
+Jan 07 21:14:18.872 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:14:18.873 HYPERVISOR: exec_cmd: vm slot_disable_nio BostonPizza 0 0 
+Jan 07 21:14:18.884 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BostonPizza 0 0 
+Jan 07 21:14:18.886 HYPERVISOR: exec_cmd: nio delete udp-a1ebee4c-fd92-47b9-a01c-02debf45ccd6 
+Jan 07 21:14:18.953 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:14:18.953 HYPERVISOR: exec_cmd: vm slot_disable_nio BostonPizza 2 0 
+Jan 07 21:14:18.967 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BostonPizza 2 0 
+Jan 07 21:14:18.968 HYPERVISOR: exec_cmd: nio delete udp-2128e673-cdde-47e3-a8da-37f78d9caf45 
+Jan 07 21:14:19.311 HYPERVISOR: exec_cmd: vm get_status BostonPizza 
+Jan 07 21:14:19.311 HYPERVISOR: exec_cmd: vm stop BostonPizza 
+Jan 07 21:14:19.387 VM: VM BostonPizza shutdown.
+Jan 07 21:14:19.388 HYPERVISOR: exec_cmd: vm extract_config BostonPizza 
+Jan 07 21:14:19.390 HYPERVISOR: exec_cmd: vm delete BostonPizza 
+Jan 07 21:14:19.390 VM: VM BostonPizza destroyed.
+Jan 07 21:14:19.390 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 21:14:19.816 HYPERVISOR: Stopped.
+Jan 07 21:14:19.816 GENERAL: reset done.

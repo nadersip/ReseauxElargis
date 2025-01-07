@@ -1,0 +1,75 @@
+Jan 07 21:13:11.191 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 07 21:13:11.191 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34609.
+Jan 07 21:13:11.198 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 21:13:11.198 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nader/GNS3/projects/Lab1.2/project-files/dynamips 
+Jan 07 21:13:11.198 GENERAL: working_dir=/home/nader/GNS3/projects/Lab1.2/project-files/dynamips
+Jan 07 21:13:11.198 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nader/GNS3/projects/Lab1.2/project-files/dynamips/ef913085-123a-4d82-aa4b-4d52cec51043 
+Jan 07 21:13:11.198 GENERAL: working_dir=/home/nader/GNS3/projects/Lab1.2/project-files/dynamips/ef913085-123a-4d82-aa4b-4d52cec51043
+Jan 07 21:13:11.199 HYPERVISOR: exec_cmd: vm create BackBone2 2 c3745 
+Jan 07 21:13:11.199 VM: VM BackBone2 created.
+Jan 07 21:13:11.199 HYPERVISOR: exec_cmd: vm set_con_tcp_port BackBone2 5001 
+Jan 07 21:13:11.199 HYPERVISOR: exec_cmd: c3745 get_mac_addr BackBone2 
+Jan 07 21:13:11.200 HYPERVISOR: exec_cmd: vm set_disk0 BackBone2 0 
+Jan 07 21:13:11.200 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.200 HYPERVISOR: exec_cmd: vm set_idle_pc BackBone2 0x60aa1da0 
+Jan 07 21:13:11.201 HYPERVISOR: exec_cmd: vm set_ios BackBone2 /home/nader/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 07 21:13:11.201 HYPERVISOR: exec_cmd: c3745 set_mac_addr BackBone2 c402.ad10.0000 
+Jan 07 21:13:11.201 HYPERVISOR: exec_cmd: vm set_nvram BackBone2 256 
+Jan 07 21:13:11.202 HYPERVISOR: exec_cmd: vm set_ram BackBone2 256 
+Jan 07 21:13:11.202 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.202 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 1 0 NM-1FE-TX 
+Jan 07 21:13:11.203 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.203 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 2 0 NM-1FE-TX 
+Jan 07 21:13:11.203 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.203 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 3 0 NM-1FE-TX 
+Jan 07 21:13:11.204 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.204 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 4 0 NM-1FE-TX 
+Jan 07 21:13:11.204 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.204 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 0 16 WIC-1T 
+Jan 07 21:13:11.205 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.205 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 0 32 WIC-1T 
+Jan 07 21:13:11.205 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:11.206 HYPERVISOR: exec_cmd: vm slot_add_binding BackBone2 0 48 WIC-1T 
+Jan 07 21:13:12.224 HYPERVISOR: exec_cmd: nio create_udp udp-b5555049-49bf-4624-b373-c77562ed423a 10016 127.0.0.1 10017 
+Jan 07 21:13:12.432 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BackBone2 1 0 udp-b5555049-49bf-4624-b373-c77562ed423a 
+Jan 07 21:13:12.433 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:12.523 HYPERVISOR: exec_cmd: nio create_udp udp-95d6a7a0-5d92-4aed-b6cf-0bbd33f528c0 10022 127.0.0.1 10023 
+Jan 07 21:13:12.525 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BackBone2 2 0 udp-95d6a7a0-5d92-4aed-b6cf-0bbd33f528c0 
+Jan 07 21:13:12.525 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:25.039 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jan 07 21:13:25.039 VM: VM Ghost created.
+Jan 07 21:13:25.040 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/nader/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Jan 07 21:13:25.043 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 07 21:13:25.044 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/nader/GNS3/projects/Lab1.2/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Jan 07 21:13:25.044 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jan 07 21:13:25.045 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 21:13:25.045 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 07 21:13:25.045 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 07 21:13:25.397 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 21:13:25.397 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 07 21:13:25.453 VM: VM Ghost shutdown.
+Jan 07 21:13:25.453 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 07 21:13:25.454 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 07 21:13:25.454 VM: VM Ghost destroyed.
+Jan 07 21:13:25.455 HYPERVISOR: exec_cmd: vm set_ghost_status BackBone2 2 
+Jan 07 21:13:25.456 HYPERVISOR: exec_cmd: vm set_ghost_file BackBone2 /home/nader/GNS3/projects/Lab1.2/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Jan 07 21:13:25.456 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:13:25.457 HYPERVISOR: exec_cmd: vm set_config BackBone2 configs/i2_startup-config.cfg 
+Jan 07 21:13:25.457 HYPERVISOR: exec_cmd: vm start BackBone2 
+Jan 07 21:14:18.973 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:14:18.973 HYPERVISOR: exec_cmd: vm slot_disable_nio BackBone2 2 0 
+Jan 07 21:14:18.983 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BackBone2 2 0 
+Jan 07 21:14:18.985 HYPERVISOR: exec_cmd: nio delete udp-95d6a7a0-5d92-4aed-b6cf-0bbd33f528c0 
+Jan 07 21:14:42.813 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:14:42.813 HYPERVISOR: exec_cmd: vm slot_disable_nio BackBone2 1 0 
+Jan 07 21:14:42.822 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding BackBone2 1 0 
+Jan 07 21:14:42.823 HYPERVISOR: exec_cmd: nio delete udp-b5555049-49bf-4624-b373-c77562ed423a 
+Jan 07 21:15:19.974 HYPERVISOR: exec_cmd: vm get_status BackBone2 
+Jan 07 21:15:19.974 HYPERVISOR: exec_cmd: vm stop BackBone2 
+Jan 07 21:15:20.049 VM: VM BackBone2 shutdown.
+Jan 07 21:15:20.050 HYPERVISOR: exec_cmd: vm extract_config BackBone2 
+Jan 07 21:15:20.052 HYPERVISOR: exec_cmd: vm delete BackBone2 
+Jan 07 21:15:20.052 VM: VM BackBone2 destroyed.
+Jan 07 21:15:20.053 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 21:15:20.346 HYPERVISOR: Stopped.
+Jan 07 21:15:20.346 GENERAL: reset done.
